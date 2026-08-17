@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#062838">
+<title>DANDI Human ESG OS | Demo</title>
+<style>
+:root{--navy:#062838;--mint:#52d6bd;--ink:#102633;--muted:#68808a;--line:#dbe7ea;--bg:#f4f8f9}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:radial-gradient(circle at 80% 12%,rgba(82,214,189,.24),transparent 27%),linear-gradient(145deg,#062838,#0b5060);color:#fff;min-height:100vh}.shell{width:min(980px,calc(100% - 24px));margin:auto;padding:28px 0 80px}.top{display:flex;align-items:center;gap:12px}.mark{width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,var(--mint),#7fb8ff);display:grid;place-items:center;color:#062838;font-weight:950}.brand b{display:block}.brand span{font-size:11px;color:#bad2db}.badge{margin-left:auto;padding:7px 10px;border:1px solid rgba(82,214,189,.5);border-radius:999px;color:#91ead8;font-size:10px;font-weight:900}.hero{padding:64px 0 30px}.ey{font-size:12px;font-weight:900;letter-spacing:.12em;color:#83e7d4}.hero h1{font-size:clamp(42px,7vw,74px);line-height:1.02;letter-spacing:-.055em;margin:14px 0 20px}.hero h1 em{font-style:normal;color:#7be8d3}.hero p{max-width:720px;color:#d7e8ed;font-size:17px;line-height:1.8}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.btn{border:0;border-radius:15px;padding:14px 18px;font:inherit;font-weight:900;min-height:50px;cursor:pointer}.primary{background:linear-gradient(135deg,var(--mint),#7cc7f7);color:#063043}.secondary{background:#fff;color:#08283a}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.13);border-radius:20px;padding:18px}.card b{display:block;font-size:26px}.card span{font-size:12px;color:#c8dce3}.access{margin-top:18px;background:#fff;color:var(--ink);border-radius:22px;padding:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;box-shadow:0 20px 60px rgba(0,0,0,.18)}.access small{display:block;color:var(--muted);font-weight:800}.access strong{display:block;font-size:19px;margin-top:4px;color:#0a5a55}.note{margin-top:14px;color:#bed2d9;font-size:12px;line-height:1.65}.foot{margin-top:34px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;color:#a8c2cb;font-size:11px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#fff;color:#08283a;padding:11px 14px;border-radius:13px;font-weight:850;font-size:12px;opacity:0;transition:.2s;pointer-events:none}.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:700px){.shell{padding-top:18px}.hero{padding-top:46px}.hero p{font-size:15px}.actions .btn{width:100%}.grid{grid-template-columns:1fr}.access{grid-template-columns:1fr}.badge{font-size:9px}.hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="top"><div class="mark">D</div><div class="brand"><b>DANDI HUMAN ESG OS</b><span>Human Sustainability Intelligence</span></div><div class="badge">DEMO · NO LIVE DB</div></div>
+  <div class="hero"><div class="ey">300 EMPLOYEES · 267 RESPONSES · 12-WEEK ACTION</div><h1>기업 Human ESG를<br><em>한 번에 시연</em>합니다.</h1><p>이 데모는 실제 중앙 DB 대신 267명의 가상 익명 응답을 브라우저에 생성하여, Evidence·Experience·부서 Heat Map·CEO Priority 3·12주 개선계획이 어떻게 연결되는지 즉시 보여줍니다.</p><div class="actions"><button class="btn primary" onclick="startDemo()">CEO 데모 바로보기 →</button><button class="btn secondary" onclick="openSurvey()">임직원 30문항 체험</button></div></div>
+  <div class="grid"><div class="card"><b>20</b><span>Human ESG Evidence 항목</span></div><div class="card"><b>267 / 300</b><span>가상 응답 · 참여율 89%</span></div><div class="card"><b>N&lt;10</b><span>실운영 시 소집단 자동 비공개 원칙</span></div></div>
+  <div class="access"><div><small>기업코드</small><strong>DANDI-DEMO</strong></div><div><small>관리자 PIN</small><strong>2026</strong></div><div><small>데모 기업</small><strong>A 제조기업 · 300명</strong></div></div>
+  <div class="note">※ 본 링크는 공동사업 전 시연용입니다. 실제 직원 데이터는 수집하지 않으며, 입력값은 현재 브라우저의 localStorage에만 저장됩니다. 실제 Pilot에서는 Supabase 등 중앙 DB·관리자 인증·기업별 접근통제를 별도로 연결해야 합니다.</div>
+  <div class="foot">㈜마음알지 · DANDI Human ESG OS · 비진단 · 비의료 · 비인사평가용 Demo</div>
+</div><div id="toast" class="toast">데모 데이터를 준비하고 있습니다.</div>
+<script>
+const C={name:'A 제조기업 Human ESG DEMO',industry:'제조업',size:300,year:2026,depts:['경영지원','영업','연구개발','생산1','생산2','품질관리']};
+const EV=[2,2,3,2,1,3,2,3,2,1,2,3,2,1,1,2,2,2,1,2], K=['MH','JS','BO','PS','OS','RC','FR','WL','RE','EN'];
+function records(){const cfg=[['경영지원',28,74],['영업',42,62],['연구개발',34,77],['생산1',62,47],['생산2',61,55],['품질관리',28,70],['기타',12,65]],off=[3,-4,-5,-8,-6,8,-3,-4,10,2];let seed=24681357,R=[];const rnd=()=>{seed=(seed*1103515245+12345)%2147483648;return seed/2147483648};cfg.forEach(([dept,n,base])=>{for(let i=0;i<n;i++){let s={};K.forEach((k,j)=>s[k]=Math.round(Math.max(22,Math.min(94,base+off[j]+(rnd()-.5)*16))));R.push({id:'D-'+dept+'-'+i,meta:{dept,role:i%9===0?'중간관리자':'일반직원',tenure:'1~5년',work:dept.includes('생산')?'생산':'사무'},scores:s,demo:true})}});return R.slice(0,267)}
+function prep(){localStorage.setItem('hesg_c1',JSON.stringify(C));let e={};EV.forEach((v,i)=>e['E'+String(i+1).padStart(2,'0')]=v);localStorage.setItem('hesg_e1',JSON.stringify(e));localStorage.setItem('hesg_r1',JSON.stringify(records()));localStorage.removeItem('hesg_d1')}
+function startDemo(){prep();document.getElementById('toast').classList.add('on');setTimeout(()=>location.href='human-esg-os.html?view=dashboard',450)}
+function openSurvey(){prep();location.href='human-esg-os.html?view=employee'}
+</script>
+</body></html>
