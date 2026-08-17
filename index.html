@@ -20,7 +20,7 @@
       <button data-nav="home" onclick="showView('home')">소개</button>
       <button data-nav="assessment" onclick="startAssessment()">마음·에너지 체크</button>
       <button data-nav="result" onclick="showResult()">나의 결과</button>
-      <button onclick="document.getElementById('privacy').scrollIntoView()">이용안내</button>
+      <button onclick="document.getElementById('privacy').scrollIntoView()">이용안내</button><a class="nav-guide" href="interpretation-guide.html" style="text-decoration:none"><button>해석지침</button></a>
     </nav>
     <div class="pilot">PUBLIC PILOT</div>
   </div>
@@ -117,5 +117,8 @@
 
 <script src="data.js"></script>
 <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="report.js"></script>
 </body>
 </html>
