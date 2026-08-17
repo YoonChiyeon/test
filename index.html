@@ -1,1 +1,121 @@
-__FROM_LOCAL__
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071d2b">
+<meta name="description" content="BMT HUMAN ESG 500 공개 체험판 — 임직원의 마음·에너지·관계·회복을 8개 영역으로 확인하고 7일·4주 행동계획을 제공합니다.">
+<title>BMT HUMAN ESG 500 | Human Sustainability Check</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="shell">
+    <div class="brand">
+      <div class="brandmark">B</div>
+      <div class="brandcopy"><b>BMT HUMAN ESG 500</b><span>Human Sustainability · Pilot Experience</span></div>
+    </div>
+    <nav class="nav" aria-label="주 메뉴">
+      <button data-nav="home" onclick="showView('home')">소개</button>
+      <button data-nav="assessment" onclick="startAssessment()">마음·에너지 체크</button>
+      <button data-nav="result" onclick="showResult()">나의 결과</button>
+      <button onclick="document.getElementById('privacy').scrollIntoView()">이용안내</button>
+    </nav>
+    <div class="pilot">PUBLIC PILOT</div>
+  </div>
+</header>
+
+<main>
+<section id="view-home" class="view active">
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <div class="eyebrow">Manufacturing the Future · Sustaining the People Behind It</div>
+        <h1>기계의 안전을 넘어,<br><em>사람의 지속가능성</em>까지.</h1>
+        <p class="lead">BMT HUMAN ESG 500은 임직원의 마음·업무부담·에너지·관계·심리적 안전·일과 삶의 균형·회복자원을 데이터로 이해하고, 검사에서 끝나지 않도록 7일과 4주의 행동으로 연결하는 Human Sustainability 프로그램입니다.</p>
+        <div class="hero-actions">
+          <button class="btn primary" onclick="startAssessment()">마음·에너지 체크 시작 <span>→</span></button>
+          <button class="btn outline" onclick="document.getElementById('how').scrollIntoView()">프로그램 보기</button>
+        </div>
+      </div>
+      <div class="machine" aria-hidden="true">
+        <div class="machine-card">
+          <div class="pipe h"></div><div class="pipe v"></div><div class="valve"></div><div class="human-core"></div>
+          <div class="metric-float mf1">HUMAN ENERGY<b>8 Domains</b></div>
+          <div class="metric-float mf2">ACTION LOOP<b>7D + 4W</b></div>
+          <div class="metric-float mf3">PERSONAL DATA<b>On-device</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell trustbar">
+    <div class="trust"><b>32</b><span>최근 2주를 확인하는 핵심 문항</span></div>
+    <div class="trust"><b>8</b><span>마음·업무·소진·에너지·관계·안전·균형·회복</span></div>
+    <div class="trust"><b>64+</b><span>우선영역 조합을 기반으로 한 맞춤 프로파일</span></div>
+    <div class="trust"><b>7일 + 4주</b><span>즉시 실행과 지속 가능한 변화 계획</span></div>
+  </div>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head"><div><div class="eyebrow" style="color:#0a7e73">HUMAN ESG</div><h2>사람의 상태를<br>조직의 지속가능성과 연결합니다.</h2></div><p>개인에게는 자신의 강점과 관리 우선순위를, 기업에는 개인이 아닌 집단 수준의 개선 방향을 제공하는 것을 기본원칙으로 합니다.</p></div>
+      <div class="cards4">
+        <article class="feature"><div class="ico">M</div><h3>Mind-Safe</h3><p>스트레스와 소진을 낙인 없이 살피고, 스스로 조절할 수 있는 작은 행동으로 연결합니다.</p></article>
+        <article class="feature"><div class="ico">L</div><h3>Safe Leader</h3><p>관리자는 상담자가 아니라 알아차리고, 묻고, 조정하고, 적절한 지원으로 연결하는 역할을 합니다.</p></article>
+        <article class="feature"><div class="ico">F</div><h3>Family ESG</h3><p>일·가정 양립과 가족의 지속가능성을 선택형 확장모듈로 연결할 수 있습니다.</p></article>
+        <article class="feature"><div class="ico">D</div><h3>Human ESG Data</h3><p>Baseline → 행동 → 재측정의 변화 데이터를 통해 조직의 투자 우선순위를 더 명확하게 만듭니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact" id="how">
+    <div class="shell">
+      <div class="section-head"><div><div class="eyebrow" style="color:#0a7e73">HOW IT WORKS</div><h2>검사에서 끝나지 않는 6단계.</h2></div></div>
+      <div class="flow">
+        <div class="step"><span>01 SCAN</span><b>32문항 체크</b><p>최근 2주 동안의 업무와 회복상태를 확인합니다.</p></div>
+        <div class="step"><span>02 PROFILE</span><b>8영역 분석</b><p>강점과 우선 관리영역을 한눈에 확인합니다.</p></div>
+        <div class="step"><span>03 RECOMMEND</span><b>맞춤 프로파일</b><p>1순위·2순위·강점을 결합합니다.</p></div>
+        <div class="step"><span>04 ACT</span><b>7일 행동</b><p>짧고 실행 가능한 행동을 시작합니다.</p></div>
+        <div class="step"><span>05 GROW</span><b>4주 변화</b><p>개인 행동과 조직환경을 함께 조정합니다.</p></div>
+        <div class="step"><span>06 RE-SCAN</span><b>다시 확인</b><p>변화를 확인하고 다음 행동을 조정합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact" id="privacy">
+    <div class="shell">
+      <div class="privacy">
+        <div><h3>공개 체험판에서는 입력한 결과를 외부 서버로 전송하지 않습니다.</h3><p>이 페이지의 채점과 결과 생성은 사용자의 브라우저에서 실행되며, 결과는 해당 기기의 브라우저 저장공간(localStorage)에만 보관됩니다. BMT 공식 운영 전에는 개인정보·보안·노무 정책과 실제 서버 구조를 별도로 확정해야 합니다.</p></div>
+        <div class="privacy-badge">PUBLIC DEMO<b>On-device</b>개인 체험용</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="shell footergrid"><div><b>BMT HUMAN ESG 500</b><br>주식회사 마음알지 제안용 공개 Pilot Demo</div><div>비진단 · 비의료 · 비인사평가용 · Human Sustainability Experience</div></div></footer>
+</section>
+
+<section id="view-assessment" class="view">
+  <div class="assess-wrap">
+    <div class="assess-top"><div><h2>BMT 마음·에너지 체크</h2><span>최근 2주를 기준으로 답해 주세요.</span></div><button class="btn ghost" onclick="showView('home')">나가기</button></div>
+    <div class="progress-shell"><div id="progress" class="progress-bar"></div></div>
+    <div id="questionCard" class="question-card"></div>
+  </div>
+</section>
+
+<section id="view-result" class="view">
+  <div id="resultContent" class="result-wrap"></div>
+</section>
+</main>
+
+<nav class="mobile-nav" aria-label="모바일 메뉴">
+  <button data-nav="home" onclick="showView('home')">소개</button>
+  <button data-nav="assessment" onclick="startAssessment()">체크</button>
+  <button data-nav="result" onclick="showResult()">결과</button>
+  <button onclick="showView('home');setTimeout(()=>document.getElementById('privacy').scrollIntoView(),50)">안내</button>
+</nav>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
